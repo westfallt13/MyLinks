@@ -1,0 +1,52 @@
+img {
+  width: 40%;
+  height: 40%;
+  align-items: center;
+  border-radius: 20%;
+}
+
+body{
+  background-color: rgb(29, 29, 29);
+  color: rgb(255, 255, 255);
+}
+
+/* Center the main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Center list items content */
+.list-group {
+  width: 100%;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: center;
+}
+
+.list-group-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+h1 {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+p {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
