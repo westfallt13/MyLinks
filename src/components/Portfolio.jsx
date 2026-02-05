@@ -31,6 +31,12 @@ function Portfolio() {
                     </a>
                 </li>
 
+                <li className="list-group-item mb-1 rounded">
+                    <a href="https://calculatesumcalculator.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        Calculate Sum Calculator
+                    </a>
+                </li>
+
             </ul>
 
             <Link to="/" className="btn btn-secondary">
