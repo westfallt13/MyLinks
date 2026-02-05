@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Portfolio() {
     return (
         <main className='container'>
-            <h1 className='mt-3'>My Portfolio</h1>
+            <h1 className='mt-3 mb-4'>My Portfolio</h1>
 
             <ul className="list-group mb-4">
 
