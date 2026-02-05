@@ -33,6 +33,9 @@ function HomePage() {
 
         <ProfileName username={'Thomas Westfall'} />
 
+        <h6 className="mb-3">Software Engineer | 2D/3D Artist | Musician | Writer</h6>
+
+
         <Link to="/portfolio" className="btn btn-primary w-100" style={{ marginBottom: '10px', backgroundColor: 'white', color: 'black' }}>
           View My Portfolio
         </Link>
