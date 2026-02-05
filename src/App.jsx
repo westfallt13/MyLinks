@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio'
 import { FaFacebook, FaLinkedin, FaPatreon, FaGithub } from 'react-icons/fa'
 import tiktokIcon from './assets/tiktok-fill-svgrepo-com.svg'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import ContactButton from './components/ContactButton'
 
 function App() {
   return (
@@ -40,7 +41,15 @@ function HomePage() {
           View My Portfolio
         </Link>
 
+        <ContactButton email="westfallt13@gmail.com" />
+
+        <br></br>
+
+        <p className="socialclass">Connect With Me</p>
+
         <ul className="list-group mb-4">
+
+          <ListSocial name={'GitHub'} link={"https://github.com/westfallt13?tab=repositories"} icon={<FaGithub />} />
 
           <ListSocial name={'Facebook'} link={"https://www.facebook.com/profile.php?id=61585659697434"} icon={<FaFacebook />} />
 
@@ -48,13 +57,8 @@ function HomePage() {
 
           <ListSocial name={'Patreon'} link={"https://www.patreon.com/cw/Beachfall"} icon={<FaPatreon />} />
 
-          <ListSocial name={'GitHub'} link={"https://github.com/westfallt13?tab=repositories"} icon={<FaGithub />} />
 
-          <ListSocial
-            name={'TikTok'}
-            link={"https://www.tiktok.com/@beachfall_?fbclid=IwY2xjawPwrZJleHRuA2FlbQIxMABicmlkETE2YWtza3VJVkNPb2RWcHVQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrVmONX3VDYs6ciLtv2njuqwePQHv0QxS0YeXqxSQ-rGSth1rBWIjUF2z3Jl_aem_TJVOT0kOA465tf5DOqv4OQ"}
-            icon={<img src={tiktokIcon} alt="TikTok" style={{ width: '24px', height: '24px' }} />}
-          />
+
 
         </ul>
 
