@@ -9,31 +9,31 @@ function Portfolio() {
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://forgeonapp.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Forgeon Game Planner
+                        Forgeon Game Planner (Complex Executable Application made using Node.js, and wrapped in an Electron Window)
                     </a>
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://multiaccountexpensetracker.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Multi Account Budget Tracker
+                        Multi Account Budget Tracker (Simple Executable Application made with Node.js and wrapped in an Electron Window)
                     </a>
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://pokemonapidemoapp.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Pokemon API Demo App
+                        Pokemon API Demo App (Simple Node.js project for class)
                     </a>
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://latlonweather1.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Simple Latitude/Longitude Temperature Checker
+                        Simple Latitude/Longitude Temperature Checker (Simple Node.js project for class)
                     </a>
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://calculatesumcalculator.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Calculate Sum Calculator
+                        Calculate Sum Calculator (Simple React.js project for class)
                     </a>
                 </li>
 
