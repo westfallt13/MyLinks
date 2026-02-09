@@ -21,7 +21,7 @@ function Portfolio() {
 
                 <li className="list-group-item mb-1 rounded">
                     <a href="https://productivitytracker1.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        A simple Daily Productivity Tracker
+                        Daily Productivity Tracker
                     </a>
                 </li>
 
