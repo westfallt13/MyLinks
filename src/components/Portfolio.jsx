@@ -20,6 +20,12 @@ function Portfolio() {
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
+                    <a href="https://productivitytracker1.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        A simple Daily Productivity Tracker
+                    </a>
+                </li>
+
+                <li className="list-group-item mb-1 rounded">
                     <a href="https://github.com/westfallt13/ReSprytile" target="_blank" rel="noopener noreferrer">
                     ReSprytile (An update to the Blender plugin called Sprytile to make it compatible with Blender 5.0)</a>
                 </li>
