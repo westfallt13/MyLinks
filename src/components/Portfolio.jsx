@@ -20,6 +20,11 @@ function Portfolio() {
                 </li>
 
                 <li className="list-group-item mb-1 rounded">
+                    <a href="https://github.com/westfallt13/ReSprytile" target="_blank" rel="noopener noreferrer">
+                    ReSprytile (An update to the Blender plugin called Sprytile to make it compatible with Blender 5.0)</a>
+                </li>
+
+                <li className="list-group-item mb-1 rounded">
                     <a href="https://pokemonapidemoapp.netlify.app/" target="_blank" rel="noopener noreferrer">
                         Pokemon API Demo App (Simple Node.js project for class)
                     </a>
