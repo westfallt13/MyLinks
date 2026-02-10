@@ -28,6 +28,7 @@ function Portfolio() {
                             <tr>
                                 <th scope="col">Project Name</th>
                                 <th scope="col">Description</th>
+                                <th scope="col">Repository</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +44,17 @@ function Portfolio() {
                                         </a>
                                     </td>
                                     <td>{item.description}</td>
+                                    <td>
+                                        {item.githubUrl && (
+                                            <a 
+                                                href={item.githubUrl} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                Link To Repository
+                                            </a>
+                                        )}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
