@@ -1,54 +1,54 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { getPortfolioItems } from '../services/portfolioService';
 
 function Portfolio() {
+    const [portfolioItems, setPortfolioItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        async function fetchData() {
+            const data = await getPortfolioItems();
+            setPortfolioItems(data);
+            setLoading(false);
+        }
+        fetchData();
+    }, []);
+
     return (
         <main className='container'>
             <h1 className='mt-3 mb-4'>My Portfolio</h1>
 
-            <ul className="list-group mb-4">
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://forgeonapp.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Forgeon Game Planner (Complex Executable Application made using Node.js, and wrapped in an Electron Window)
-                    </a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://multiaccountexpensetracker.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Multi Account Budget Tracker (Simple Executable Application made with Node.js and wrapped in an Electron Window)
-                    </a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://productivitytracker1.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Daily Productivity Tracker
-                    </a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://github.com/westfallt13/ReSprytile" target="_blank" rel="noopener noreferrer">
-                    ReSprytile (An update to the Blender plugin called Sprytile to make it compatible with Blender 5.0)</a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://pokemonapidemoapp.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Pokemon API Demo App (Simple Node.js project for class)
-                    </a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://latlonweather1.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Simple Latitude/Longitude Temperature Checker (Simple Node.js project for class)
-                    </a>
-                </li>
-
-                <li className="list-group-item mb-1 rounded">
-                    <a href="https://calculatesumcalculator.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        Calculate Sum Calculator (Simple React.js project for class)
-                    </a>
-                </li>
-
-            </ul>
+            {loading ? (
+                <p>Loading portfolio items...</p>
+            ) : (
+                <div className="table-responsive mb-4">
+                    <table className="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {portfolioItems.map((item, index) => (
+                                <tr key={index}>
+                                    <td>
+                                        <a 
+                                            href={item.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            {item.name}
+                                        </a>
+                                    </td>
+                                    <td>{item.description}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            )}
 
             <Link to="/" className="btn btn-secondary">
                 ← Back to Links
