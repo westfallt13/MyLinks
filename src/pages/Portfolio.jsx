@@ -61,10 +61,6 @@ function Portfolio() {
                     </table>
                 </div>
             )}
-
-            <Link to="/" className="btn btn-secondary">
-                ← Back to Links
-            </Link>
         </main>
     );
 }
