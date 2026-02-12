@@ -1,15 +1,15 @@
 function Vision() {
   return (
     <main className='container'>
-      <h1 className='mt-3 mb-4'>Vision & Mission</h1>
+      <h1 className='mt-3 mb-4'>Vision & Mission<hr></hr></h1>
       
       <div className="text-start" style={{ maxWidth: '800px', margin: '20px auto' }}>
         <section style={{ marginBottom: '50px' }}>
-          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4da6ff' }}>
-            Vision
+          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center' }}>
+            Vision<hr></hr>
           </h2>
           <p style={{ fontSize: '18px', lineHeight: '1.8', fontStyle: 'italic', textAlign: 'center', marginBottom: '20px' }}>
-            "Building a world where pain becomes purpose, and creativity becomes change."
+            "Building a world where pain becomes purpose, and creativity becomes change."<hr></hr>
           </p>
           <p style={{ fontSize: '18px', lineHeight: '1.8' }}>
             I envision myself at the helm of a creative development company—a space where innovation meets 
@@ -31,11 +31,11 @@ function Vision() {
         </section>
 
         <section style={{ marginBottom: '50px' }}>
-          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4da6ff' }}>
-            Mission
+          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center' }}>
+            Mission<hr></hr>
           </h2>
           <p style={{ fontSize: '18px', lineHeight: '1.8', fontStyle: 'italic', textAlign: 'center', marginBottom: '20px' }}>
-            "Study hard. Practice harder. Play even harder. Repeat."
+            "Study hard. Practice harder. Play even harder. Repeat."<hr></hr>
           </p>
           <p style={{ fontSize: '18px', lineHeight: '1.8' }}>
             My day-to-day mission is simple but demanding: develop my skills relentlessly. I'm committed to 
@@ -58,40 +58,40 @@ function Vision() {
         </section>
 
         <section style={{ marginBottom: '50px' }}>
-          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4da6ff' }}>
+          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center' }}>
             Core Values
           </h2>
           <ul style={{ fontSize: '18px', lineHeight: '2', listStyle: 'none', padding: '0' }}>
             <li style={{ marginBottom: '20px' }}>
-              <strong style={{ fontSize: '22px', color: '#4da6ff' }}>Diligence</strong>
+              <strong style={{ fontSize: '22px',}}>Diligence</strong>
               <p style={{ marginTop: '8px', marginLeft: '0' }}>
                 I get lost in my work, producing at a rapid rate because I'm fully committed to every project. 
                 Diligence isn't just about working hard—it's about caring deeply about the outcome.
               </p>
             </li>
             <li style={{ marginBottom: '20px' }}>
-              <strong style={{ fontSize: '22px', color: '#4da6ff' }}>Innovation</strong>
+              <strong style={{ fontSize: '22px'}}>Innovation</strong>
               <p style={{ marginTop: '8px', marginLeft: '0' }}>
                 Creativity drives everything I do. Whether it's finding elegant solutions to complex coding 
                 problems or crafting pixel art that tells a story, innovation is at the heart of my process.
               </p>
             </li>
             <li style={{ marginBottom: '20px' }}>
-              <strong style={{ fontSize: '22px', color: '#4da6ff' }}>Integrity</strong>
+              <strong style={{ fontSize: '22px' }}>Integrity</strong>
               <p style={{ marginTop: '8px', marginLeft: '0' }}>
                 Honesty, transparency, and ethical work aren't optional—they're foundational. I build trust 
                 through consistent, reliable delivery and authentic communication.
               </p>
             </li>
             <li style={{ marginBottom: '20px' }}>
-              <strong style={{ fontSize: '22px', color: '#4da6ff' }}>Excellence</strong>
+              <strong style={{ fontSize: '22px' }}>Excellence</strong>
               <p style={{ marginTop: '8px', marginLeft: '0' }}>
                 Good enough has never been good enough for me. I pursue excellence in every line of code, 
                 every pixel placed, and every note composed. Quality is my standard.
               </p>
             </li>
             <li style={{ marginBottom: '20px' }}>
-              <strong style={{ fontSize: '22px', color: '#4da6ff' }}>Optimism</strong>
+              <strong style={{ fontSize: '22px'}}>Optimism</strong>
               <p style={{ marginTop: '8px', marginLeft: '0' }}>
                 My unique philosophy is looking at the bright side of everything. Challenges are opportunities. 
                 Failures are lessons. Setbacks are setups for comebacks. Optimism isn't naive—it's strategic.
@@ -101,7 +101,7 @@ function Vision() {
         </section>
 
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4da6ff' }}>
+          <h2 style={{ fontSize: '32px', marginBottom: '20px', textAlign: 'center' }}>
             The Impact I Seek
           </h2>
           <p style={{ fontSize: '18px', lineHeight: '1.8' }}>
