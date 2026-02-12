@@ -28,7 +28,7 @@ function App() {
           <Link to="/" className="nav-button" onClick={closeMenu}>Home</Link>
           <Link to="/about" className="nav-button" onClick={closeMenu}>About</Link>
           <Link to="/vision" className="nav-button" onClick={closeMenu}>Vision</Link>
-          <Link to="/portfolio" className="nav-button" onClick={closeMenu}>Portfolio</Link>
+          <Link to="/portfolio" className="nav-button" onClick={closeMenu}>Web DevPortfolio</Link>
           <Link to="/contact" className="nav-button" onClick={closeMenu}>Contact</Link>
         </div>
       </nav>

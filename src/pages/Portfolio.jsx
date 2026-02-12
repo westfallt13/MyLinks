@@ -17,7 +17,7 @@ function Portfolio() {
 
     return (
         <main className='container'>
-            <h1 className='mt-3 mb-4'>My Portfolio</h1>
+            <h1 className='mt-3 mb-4'>My Web Dev Portfolio</h1>
 
             {loading ? (
                 <p>Loading portfolio items...</p>

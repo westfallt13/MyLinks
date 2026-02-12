@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <main className='container'>
-        <h1 className='mt-3 mb-3'>My Links</h1>
+        <h1 className='mt-3 mb-3'>Central Hub</h1>
         <ProfilePicture />
         <ProfileName username={'Thomas Westfall'} />
         <h6 className="mb-3">Software Engineer | 2D/3D Artist | Musician | Writer</h6>
