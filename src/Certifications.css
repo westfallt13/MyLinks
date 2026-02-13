@@ -18,6 +18,7 @@
 
 .cert-card {
   border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -32,7 +33,7 @@
 .cert-thumbnail {
   width: 100%;
   height: 200px;
-  object-fit:fill;
+  object-fit: cover;
   display: block;
 }
 
@@ -75,6 +76,7 @@
   align-items: center;
   z-index: 1000;
   padding: 2rem;
+  overflow-y: auto;
 }
 
 .modal-content {
@@ -82,10 +84,10 @@
   flex-direction: row;
   gap: 2rem;
   max-width: 1400px;
-  max-height: 85vh;
   width: auto;
   background: transparent;
   align-items: flex-start;
+  margin: auto;
 }
 
 .modal-image-container {
@@ -93,16 +95,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  overflow-y: auto;
-  max-height: 85vh;
 }
 
 .cert-fullscreen {
-  max-width: 650px;
-  max-height: none;
+  max-width: 800px;
   width: auto;
   height: auto;
-  object-fit: fill;
+  object-fit: contain;
   display: block;
 }
 
@@ -110,10 +109,10 @@
   flex: 0 0 400px;
   background: white;
   padding: 2rem;
-  overflow-y: auto;
+  border-radius: 8px;
   height: fit-content;
-  max-height: 85vh;
 }
+
 .modal-info-box h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -160,6 +159,13 @@
   color: #444;
 }
 
+.cert-content-text {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
 .close-button {
   position: fixed;
   top: 1rem;
@@ -188,18 +194,32 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+  .modal-overlay {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
   .modal-content {
     flex-direction: column;
     max-width: 90vw;
+    width: 100%;
+    padding: 3rem 0 1rem 0;
   }
 
   .modal-info-box {
     flex: 0 0 auto;
     width: 100%;
+    order: 1;
+  }
+
+  .modal-image-container {
+    width: 100%;
+    order: 2;
   }
 
   .cert-fullscreen {
-    max-width: 90vw;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -214,7 +234,11 @@
   }
 
   .modal-overlay {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 3.5rem 0 1rem 0;
   }
 
   .modal-info-box {
@@ -224,11 +248,10 @@
   .modal-info-box h2 {
     font-size: 1.3rem;
   }
-}
 
-.cert-content-text {
-  font-size: 1.5rem;
-  color: #444;
-  line-height: 1.5;
-  margin: 0 0 0.75rem 0;
+  .close-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.75rem;
+  }
 }

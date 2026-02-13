@@ -30,8 +30,9 @@ function App() {
           <Link to="/about" className="nav-button" onClick={closeMenu}>About</Link>
           <Link to="/vision" className="nav-button" onClick={closeMenu}>Vision</Link>
           <Link to="/portfolio" className="nav-button" onClick={closeMenu}>Web DevPortfolio</Link>
-          <Link to="/contact" className="nav-button" onClick={closeMenu}>Contact</Link>
           <Link to="/certifications" className="nav-button" onClick={closeMenu}>Certifications</Link>
+          <Link to="/contact" className="nav-button" onClick={closeMenu}>Contact</Link>
+
         </div>
       </nav>
 
@@ -41,7 +42,8 @@ function App() {
         <Route path="/vision" element={<Vision />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/certifications" element={<Certifications/>}/>
+        <Route path="/certifications" element={<Certifications />} />
+
       </Routes>
     </BrowserRouter>
   )
