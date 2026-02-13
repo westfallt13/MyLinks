@@ -6,6 +6,7 @@ import About from './pages/About'
 import Vision from './pages/Vision'
 import { ContactForm } from './pages/ContactForm'
 import Portfolio from './pages/Portfolio'
+import Certifications from './pages/Certifications'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,6 +31,7 @@ function App() {
           <Link to="/vision" className="nav-button" onClick={closeMenu}>Vision</Link>
           <Link to="/portfolio" className="nav-button" onClick={closeMenu}>Web DevPortfolio</Link>
           <Link to="/contact" className="nav-button" onClick={closeMenu}>Contact</Link>
+          <Link to="/certifications" className="nav-button" onClick={closeMenu}>Certifications</Link>
         </div>
       </nav>
 
@@ -39,6 +41,7 @@ function App() {
         <Route path="/vision" element={<Vision />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/certifications" element={<Certifications/>}/>
       </Routes>
     </BrowserRouter>
   )

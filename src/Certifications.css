@@ -1,0 +1,234 @@
+.certifications-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certifications-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: white;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cert-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit:fill;
+  display: block;
+}
+
+.cert-info {
+  padding: 1rem;
+  min-height: 120px;
+}
+
+.cert-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cert-info p {
+  margin: 0.25rem 0;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.cert-date {
+  color: #555 !important;
+  font-size: 0.85rem;
+  font-weight: 400 !important;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1400px;
+  max-height: 85vh;
+  width: auto;
+  background: transparent;
+  align-items: flex-start;
+}
+
+.modal-image-container {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+.cert-fullscreen {
+  max-width: 650px;
+  max-height: none;
+  width: auto;
+  height: auto;
+  object-fit: fill;
+  display: block;
+}
+
+.modal-info-box {
+  flex: 0 0 400px;
+  background: white;
+  padding: 2rem;
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 85vh;
+}
+.modal-info-box h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #222;
+  line-height: 1.3;
+}
+
+.modal-info-box h3 {
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.modal-issuer {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.modal-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.modal-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-description p {
+  margin: 0 0 1rem 0;
+}
+
+.modal-description ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.modal-description li {
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.close-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  transition: all 0.2s;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.close-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .modal-content {
+    flex-direction: column;
+    max-width: 90vw;
+  }
+
+  .modal-info-box {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .cert-fullscreen {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .certifications-container {
+    padding: 1rem;
+  }
+
+  .modal-overlay {
+    padding: 1rem;
+  }
+
+  .modal-info-box {
+    padding: 1.5rem;
+  }
+
+  .modal-info-box h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.cert-content-text {
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
